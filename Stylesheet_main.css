@@ -6,16 +6,20 @@
     --color-5-darker:   #0E334B;
     --color-6-darkest:  #012033;
 }
-*{ /* Fjern standard formatering */
-	margin: 0;
-	padding: 0;
-}
 @font-face {
 	font-family: 'Saira';
 	src: url('fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype');
 }
+*{ /* Fjern standard formatering */
+	margin: 0;
+	padding: 0;
+	font-family: 'Saira', sans-serif;
+}
 button:hover {
 	cursor: pointer;
+}
+ul{ /*unordered list*/
+	margin-left: 20px;
 }
 .titlebox {
 	display: flex;
@@ -34,7 +38,6 @@ button:hover {
 	position: relative;
 }
 .titlebox h1 {
-	font-family: 'Saira', sans-serif;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
@@ -62,7 +65,12 @@ button:hover {
 }
 #who_is_it_for_container{
 	background-color: var(--color-4-dark);
-
+	color: white;
+}
+#who_is_it_for_text{
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px;
 }
 #the_program_container{
 	background-color: var(--color-1-lightest);
@@ -70,7 +78,7 @@ button:hover {
 }
 #whos_behind_the_course_container{
 	background-color: var(--color-4-dark);
-
+	color: white;
 }
 #reviews_from_alumni_container{
 	background-color: var(--color-1-lightest);
@@ -78,6 +86,7 @@ button:hover {
 }
 #practical_information_pricing_container{
 	background-color: var(--color-4-dark);
+	color: white;
 
 }
 #enrollment_container {
