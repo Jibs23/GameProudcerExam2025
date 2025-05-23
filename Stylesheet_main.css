@@ -19,7 +19,7 @@ button:hover {
 	cursor: pointer;
 }
 ul{ /*unordered list*/
-	margin-left: 20px;
+	margin-left: 30px;
 }
 .titlebox {
 	display: flex;
@@ -32,7 +32,7 @@ ul{ /*unordered list*/
 		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
 		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
 	padding: 10px;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	height: 90px;
 	position: relative;
@@ -56,41 +56,44 @@ ul{ /*unordered list*/
 /** WEBSITE SECTIONS **/
 .section_container {
 	display: grid;
+	width: 80%;
+	margin: 0 auto;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
-#becoming_a_game_producer_container{
+.section_background_dark{
+	background-color: var(--color-4-dark);
+	color: white;
+}
+.section_background_light{
 	background-color: var(--color-1-lightest);
+	color: black;
+}
+
+#becoming_a_game_producer_container{
 
 }
 #who_is_it_for_container{
-	background-color: var(--color-4-dark);
-	color: white;
 }
 #who_is_it_for_text{
-	width: 60%;
 	margin: 0 auto;
 	padding: 20px;
+	width: 80%;
 }
 #the_program_container{
-	background-color: var(--color-1-lightest);
 
 }
 #whos_behind_the_course_container{
-	background-color: var(--color-4-dark);
 	color: white;
 }
 #reviews_from_alumni_container{
-	background-color: var(--color-1-lightest);
 
 }
 #practical_information_pricing_container{
-	background-color: var(--color-4-dark);
 	color: white;
 
 }
 #enrollment_container {
-	background-color: var(--color-1-lightest);
 
 }
 #enrollment_form {
