@@ -1,0 +1,27 @@
+:root {
+    --color-1-lightest: #E7EFF4;
+    --color-2-light:    #8AB2CA;
+    --color-3-medium:   #5382A0;
+    --color-4-dark:     #295875;
+    --color-5-darker:   #0E334B;
+    --color-6-darkest:  #012033;
+}
+*{ /* Fjern standard formatering */
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype');
+}
+.titlebox {
+    background-color: var(--color-3-medium);
+	font-family: 'Saira';
+	color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+	box-shadow: 
+		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
+		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
+	text-align: center;
+}
