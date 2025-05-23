@@ -70,8 +70,7 @@ ul{ /*unordered list*/
 	color: black;
 }
 
-#becoming_a_game_producer_container{
-
+#becoming_a_game_producer_container{ /* GAME PRODUCER */
 }
 #GameProducerVideo{
 	margin: 0 auto;
@@ -81,27 +80,27 @@ ul{ /*unordered list*/
 	padding: 25px;
 	border: 0px;
 }
-#who_is_it_for_container{
+#who_is_it_for_container{ /* WHO IS IT FOR */
 }
 #who_is_it_for_text{
 	margin: 0 auto;
 	padding: 20px;
 	width: 80%;
 }
-#the_program_container{
+#the_program_container{ /* THE PROGRAM */
 
 }
-#whos_behind_the_course_container{
+#whos_behind_the_course_container{ /* WHOS BEHIND THE COURSE */
 	color: white;
 }
-#reviews_from_alumni_container{
+#reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
 }
-#practical_information_pricing_container{
+#practical_information_pricing_container{ /* PRACTICAL INFORMATION & PRICING */
 	color: white;
 
 }
-#enrollment_container {
+#enrollment_container { /* ENROLLMENT */
 
 }
 #enrollment_form {
