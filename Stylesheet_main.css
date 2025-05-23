@@ -34,9 +34,30 @@ body {
 #footer {
 	background-color: var(--color-4-dark);
 	height: 250px;
-	align-content: center;
+	width: 100vw;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#footer img {
+.AVPFooter {
+	display: inline-flex;
+	color: var(--color-1-lightest);
+}
+
+.AVPFooter img {
 	height: 180px;
+	display: inline-flex;
+	margin-right: 15px;
+	border-radius: 15px;
+}
+
+.AVPcontact img {
+	height: 40px;
+
+	
+}
+
+.GPFooter img {
+	height: 240px;
 }
