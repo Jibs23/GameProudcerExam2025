@@ -73,6 +73,14 @@ ul{ /*unordered list*/
 #becoming_a_game_producer_container{
 
 }
+#GameProducerVideo{
+	margin: 0 auto;
+	align-self: auto;
+	aspect-ratio: 16/9;
+	width: 60%;
+	padding: 25px;
+	border: 0px;
+}
 #who_is_it_for_container{
 }
 #who_is_it_for_text{
