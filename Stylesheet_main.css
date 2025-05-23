@@ -14,6 +14,11 @@
 	font-family: 'Saira';
 	src: url('fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype');
 }
+
+body {
+	min-height: 100vh;
+}
+
 .titlebox {
     background-color: var(--color-3-medium);
 	font-family: 'Saira';
@@ -24,4 +29,14 @@
 		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
 		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
 	text-align: center;
+}
+
+#footer {
+	background-color: var(--color-4-dark);
+	height: 250px;
+	align-content: center;
+}
+
+#footer img {
+	height: 180px;
 }
