@@ -15,13 +15,35 @@
 	src: url('fonts/Saira-VariableFont_wdth,wght.ttf') format('truetype');
 }
 .titlebox {
-    background-color: var(--color-3-medium);
-	font-family: 'Saira';
-	color: white;
-    text-transform: uppercase;
-    border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	background-color: var(--color-3-medium);
+	border-radius: 15px;
 	box-shadow: 
 		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
 		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
+	padding: 10px;
+	width: 80%;
+	margin: 0 auto;
+	height: 55px;
+	position: relative;
+}
+.titlebox h1 {
+	font-family: 'Saira', sans-serif;
+	color: white;
+	text-transform: uppercase;
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	pointer-events: none;
+}
+.titlebox img {
+	height: 110%;
+	margin-left: auto;
+	position: relative;
+	z-index: 1;
 }
