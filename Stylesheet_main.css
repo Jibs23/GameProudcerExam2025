@@ -129,3 +129,49 @@ ul{ /*unordered list*/
 	color: white;
 	border: none;
 }
+
+#footer {
+	background-color: var(--color-4-dark);
+	height: 250px;
+	align-content: center;
+	width: 100vw;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-1-lightest);
+}
+
+#footer img {
+	display: inline-flex;
+	
+}
+
+.AVPFooter {
+	height: 250px;
+	align-content: center;
+	
+}
+
+.AVPFooter img {
+	height: 180px;
+	display: inline-flex;
+	margin-right: 15px;
+	border-radius: 15px;
+	
+}
+
+.AVPInfo {
+	height: 180px;
+	display: inline-block;
+	
+}
+
+.AVPcontact img {
+	height: 40px;
+
+	
+}
+
+.GPFooter img {
+	height: 240px;
+}
