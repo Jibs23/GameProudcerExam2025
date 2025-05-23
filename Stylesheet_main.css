@@ -19,7 +19,7 @@ button:hover {
 	cursor: pointer;
 }
 ul{ /*unordered list*/
-	margin-left: 20px;
+	margin-left: 30px;
 }
 .titlebox {
 	display: flex;
@@ -32,7 +32,7 @@ ul{ /*unordered list*/
 		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
 		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
 	padding: 10px;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	height: 90px;
 	position: relative;
@@ -56,41 +56,67 @@ ul{ /*unordered list*/
 /** WEBSITE SECTIONS **/
 .section_container {
 	display: grid;
+	width: 80%;
+	margin: 0 auto;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
-#becoming_a_game_producer_container{
-	background-color: var(--color-1-lightest);
-
-}
-#who_is_it_for_container{
+.section_background_dark{
 	background-color: var(--color-4-dark);
 	color: white;
+}
+.section_background_light{
+	background-color: var(--color-1-lightest);
+	color: black;
+}
+
+#becoming_a_game_producer_container{ /* GAME PRODUCER */
+}
+#GameProducerVideo{
+	margin: 0 auto;
+	align-self: auto;
+	aspect-ratio: 16/9;
+	width: 60%;
+	padding: 25px;
+	border: 0px;
+}
+#who_is_it_for_container{ /* WHO IS IT FOR */
 }
 #who_is_it_for_text{
-	width: 60%;
 	margin: 0 auto;
 	padding: 20px;
+	width: 80%;
 }
-#the_program_container{
-	background-color: var(--color-1-lightest);
-
+#program_photo{
+	height: 400px;
+	justify-self: right;
+	align-self: center;
 }
-#whos_behind_the_course_container{
-	background-color: var(--color-4-dark);
+#the_program_container{ /* THE PROGRAM */
+	display: grid;
+	width: 80%;
+}
+#the_program_content_1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 20px;
+	margin: 0 auto;
+	justify-content: center;
+	width : 90%;
+	
+}
+#whos_behind_the_course_container{ /* WHOS BEHIND THE COURSE */
 	color: white;
 }
-#reviews_from_alumni_container{
-	background-color: var(--color-1-lightest);
+#reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
 }
-#practical_information_pricing_container{
-	background-color: var(--color-4-dark);
+#practical_information_pricing_container{ /* PRACTICAL INFORMATION & PRICING */
 	color: white;
 
 }
-#enrollment_container {
-	background-color: var(--color-1-lightest);
+#enrollment_container { /* ENROLLMENT */
 
 }
 #enrollment_form {
