@@ -18,6 +18,10 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Saira', sans-serif;
+	
+	/* For debugging purposes */
+	/* border: red 1px dashed;  */
+
 }
 button:hover {
 	cursor: pointer;
@@ -27,6 +31,7 @@ ul{ /*unordered list*/
 }
 .titlebox {
 	display: flex;
+	position: relative;
 	align-items: center;
 	justify-content: center;
 	font-size: larger;
@@ -36,10 +41,9 @@ ul{ /*unordered list*/
 		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
 		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
 	padding: 10px;
-	width: 100%;
+	width: clamp(95%, 85vw, 85%);
 	margin: 0 auto;
 	height: 90px;
-	position: relative;
 }
 .titlebox h1 {
 	color: white;
@@ -50,22 +54,22 @@ ul{ /*unordered list*/
 	transform: translateY(-50%);
 	width: 100%;
 	pointer-events: none;
-  user-select: none;
+	user-select: none;
 }
 .titlebox img {
 	height: 110%;
 	margin-left: auto;
 	position: relative;
-  user-select: none;
+	user-select: none;
 }
-
 /** WEBSITE SECTIONS **/
 .section_container {
-	display: grid;
-	width: 80%;
 	margin: 0 auto;
 	padding-top: 20px;
-	padding-bottom: 10px;
+}
+.section_content{
+	margin: 0 auto;
+	padding: 20px;
 }
 .section_background_dark{
 	background-color: var(--color-4-dark);
@@ -79,18 +83,16 @@ ul{ /*unordered list*/
 #becoming_a_game_producer_container{ /* GAME PRODUCER */
 }
 #GameProducerVideo{
+	display: flex;
 	margin: 0 auto;
-	align-self: auto;
 	aspect-ratio: 16/9;
-	width: 60%;
-	padding: 25px;
 	border: 0px;
+	width: clamp(50%, 900px, 100%);
 }
 #who_is_it_for_container{ /* WHO IS IT FOR */
 }
 #who_is_it_for_text{
 	margin: 0 auto;
-	padding: 20px;
 	width: 80%;
 }
 #program_photo{
@@ -99,18 +101,16 @@ ul{ /*unordered list*/
 	align-self: center;
 }
 #the_program_container{ /* THE PROGRAM */
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	width: 80%;
 }
 #the_program_content_1{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	display: flex;
+	flex-direction: row;
 	gap: 20px;
 	margin: 0 auto;
-	justify-content: center;
 	height: 550px;
-	width: 80%;
 }
 #the_program_content_2 {
 	display: grid;
@@ -118,9 +118,8 @@ ul{ /*unordered list*/
 	grid-template-rows: 1fr 1fr;
 	margin: 0 auto;
 	justify-content: center;
-	width : 80%;
 	gap: 5px;
-	
+
 }
 .program_content_2_box{
 	display: flex;
@@ -128,17 +127,16 @@ ul{ /*unordered list*/
 	align-items: center;
 	background-color: var(--color-4-dark);
 	border-radius: 32px;
-	padding: 30px;
+	padding: 20px;
 	color: white;
 	border: var(--color-2-light) 2px solid;
 	gap: 20px;
 	user-select: none;
 }
 .program_content_2_box > img {
-	height: 120px;
-	width: 120px;
+	height: 100px;
+	width: 100px;
 	user-select: none;
-	
 }
 #whos_behind_the_course_container{ /* WHOS BEHIND THE COURSE */
 	color: white;
@@ -154,14 +152,13 @@ ul{ /*unordered list*/
 }
 #enrollment_form {
 	display: grid;
-	width: 70%;
 	padding: 10px;
 	margin: 0 auto;
 	text-align: center;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
-	padding-top: 70px;
-  user-select: none;
+	padding-top: 50px;
+  	user-select: none;
 
 }
 #enrollment_form > * {
@@ -182,7 +179,7 @@ ul{ /*unordered list*/
 	font-size: large;
 	font-weight: bold;
 	width: 90px;
-		background-color: var(--color-3-medium);
+	background-color: var(--color-3-medium);
 	border-radius: 15px;
 	box-shadow: 
 		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
