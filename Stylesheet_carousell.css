@@ -164,9 +164,8 @@
 	color: rgba(0, 0, 0, 0.5);
   }
   75% {
-	filter: contrast(0.25);
-	filter: blur(6px);
-	scale: 0.5;
+  filter: contrast(0.25) blur(6px);
+  scale: 0.5;
   }
   100% {
 	filter: grayscale(1);
@@ -187,9 +186,8 @@
 	color: rgba(0, 0, 0, 0.5);
   }
   75% {
-	filter: contrast(0.25);
-	filter: blur(6px);
-	scale: 0.5;
+  filter: contrast(0.25) blur(6px);
+  scale: 0.5;
   }
   100% {
 	filter: grayscale(1);
