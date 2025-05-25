@@ -1,5 +1,15 @@
 let currentSlide = 0;
 
+// Define constants for data-carousell-signal values
+const SIGNAL_EXIT_NEXT = 'exit-next';
+const SIGNAL_EXIT_PREV = 'exit-prev';
+const SIGNAL_NEXT = 'next';
+const SIGNAL_PREVIOUS = 'previous';
+
+// Define constants for direction
+const DIRECTION_NEXT = 1;
+const DIRECTION_PREV = -1;
+
 // Select all carousells on the page
 document.querySelectorAll('.carousell').forEach(carousell => {
   const slides = carousell.querySelectorAll('.carousell-slide');
@@ -25,6 +35,10 @@ document.querySelectorAll('.carousell').forEach(carousell => {
   }
 
 function goToSlide(direction) {
+  if (direction !== DIRECTION_NEXT && direction !== DIRECTION_PREV) {
+	console.error('Invalid direction passed to goToSlide');
+	return;
+  }
 	if (isAnimating) return;
 	isAnimating = true;
 	setButtonsDisabled(true);
@@ -39,7 +53,7 @@ function goToSlide(direction) {
 	// Mark outgoing slide
 	slides[prevIndex].setAttribute(
 		'data-carousell-signal',
-		direction === 1 ? 'exit-next' : 'exit-prev'
+		direction === DIRECTION_NEXT ? SIGNAL_EXIT_NEXT : SIGNAL_EXIT_PREV
 	);
 	// Remove signal from all others
 	slides.forEach((slide, i) => {
@@ -50,7 +64,7 @@ function goToSlide(direction) {
 	void slides[localCurrent].offsetWidth;
 	slides[localCurrent].setAttribute(
 		'data-carousell-signal',
-		direction === 1 ? 'next' : 'previous'
+		direction === DIRECTION_NEXT ? SIGNAL_NEXT : SIGNAL_PREVIOUS
 	);
 
 	setTimeout(() => {
@@ -62,11 +76,11 @@ function goToSlide(direction) {
 }
 
 function nextSlide() {
-	goToSlide(1);
+	goToSlide(DIRECTION_NEXT);
 }
 
 function prevSlide() {
-	goToSlide(-1);
+	goToSlide(DIRECTION_PREV);
 }
 
   // Attach event listeners to the buttons
