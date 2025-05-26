@@ -45,6 +45,7 @@ ul{ /*unordered list*/
 	margin: 0 auto;
 	height: 90px;
 	text-wrap: nowrap;
+	overflow: hidden;
 }
 .titlebox h1 {
 	color: white;
