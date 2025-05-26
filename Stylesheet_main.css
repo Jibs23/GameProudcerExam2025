@@ -44,6 +44,7 @@ ul{ /*unordered list*/
 	width: clamp(95%, 85vw, 85%);
 	margin: 0 auto;
 	height: 90px;
+	text-wrap: nowrap;
 }
 .titlebox h1 {
 	color: white;
@@ -55,12 +56,16 @@ ul{ /*unordered list*/
 	width: 100%;
 	pointer-events: none;
 	user-select: none;
+	font-size: clamp(1.6rem, 5vw, 3rem);
+	z-index: 2;
+
 }
 .titlebox img {
 	height: 110%;
 	margin-left: auto;
 	position: relative;
 	user-select: none;
+	z-index: 1;
 }
 /** Responsive Design */
 @media (max-width: 800px) {
@@ -71,7 +76,9 @@ ul{ /*unordered list*/
 	.responsive_switch_to_rows {
 		flex-direction: row !important;
 		grid-template-rows: 1fr 1fr !important;
-
+	}
+	.titlebox img{
+		display:none;
 	}
 }
 /** WEBSITE SECTIONS **/
