@@ -148,7 +148,9 @@ ul{ /*unordered list*/
 	color: white;
 }
 #enrollment_container { /* ENROLLMENT */
-
+	width: clamp(60%, 80%, 90%);
+	margin-left: auto;
+	margin-right: auto;
 }
 #enrollment_form {
 	display: grid;
@@ -157,13 +159,12 @@ ul{ /*unordered list*/
 	text-align: center;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 20px;
-	padding-top: 50px;
   	user-select: none;
-
 }
 #enrollment_form > * {
 	border-radius: 15px;
 	border: var(--color-3-medium) 4px solid;
+	width: 100%;
 }
 #enrollment_form > :nth-child(4) { /* message box get full width */
 	grid-column: 1 / 4;
