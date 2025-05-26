@@ -163,6 +163,35 @@ ul{ /*unordered list*/
 #whos_behind_the_course_container{ /* WHOS BEHIND THE COURSE */
 	color: white;
 }
+#whos_behind_the_course_logos{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+#whos_behind_the_course_logos_box {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-5-darker);
+	color: white;
+	border-radius: 32px;
+	border: var(--color-1-lightest) 4px solid;
+	padding: 15px;
+	align-content: flex-end;
+	justify-content: flex-end;
+	width: clamp(400px, 50vw, 500px);
+	height: 300px;
+}
+
+#whos_behind_the_course_logos_box > img {
+	max-height: 100%;
+	align-self: center;
+	padding-top: 0px;
+}
+#whos_behind_the_course_logos_box:nth-child(2) > img { /* Dania Logo */
+	padding-bottom: 10px;
+}
 #reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
 }
