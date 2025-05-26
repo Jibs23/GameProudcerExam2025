@@ -1,9 +1,9 @@
 .carousell {
+  display: flex;
   position: relative;
   width: clamp(50%, 600px, 100%);
-  height: 600px;
+  height: 650px;
   margin: auto;
-  display: flex;
   align-items: center;
   justify-content: center;
   
