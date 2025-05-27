@@ -160,6 +160,72 @@ ul{ /*unordered list*/
 	width: 100px;
 	user-select: none;
 }
+
+.price_content_1_box{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--color-3-medium);
+	border-radius: 32px;
+	padding: 2px;
+	color: white;
+	border: var(--color-3-medium) 2px solid;
+	gap: 20px;
+	user-select: none;
+	margin-bottom: 10px;
+}
+
+.price_content_2_box{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--color-4-dark);
+	border-radius: 32px;
+	padding: 20px;
+	color: white;
+	border: var(--color-3-medium) 5px solid;
+	gap: 20px;
+	user-select: none;
+	margin-bottom: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.price_content_2_box > img {
+	height: 100px;
+	width: 100px;
+	margin-left: auto;
+	margin-bottom: auto;
+	position: relative;
+	user-select: none;
+	z-index: 1;
+}
+
+.price_content_3_box{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--color-4-dark);
+	border-radius: 32px;
+	padding: 20px;
+	color: white;
+	border: var(--color-3-medium) 5px solid;
+	gap: 20px;
+	user-select: none;
+	margin-bottom: 20px;
+	margin-left: 20%;
+	margin-right: 5%;
+}
+.price_content_3_box > img {
+	height: 100px;
+	width: 100px;
+	margin-left: auto;
+	margin-bottom: auto;
+	position: relative;
+	user-select: none;
+	z-index: 1;
+}
+
+
 #whos_behind_the_course_container{ /* WHOS BEHIND THE COURSE */
 	color: white;
 }
