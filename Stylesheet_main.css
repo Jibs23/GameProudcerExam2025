@@ -9,6 +9,7 @@
 /* Prevent horizontal scrollbars on the whole page */
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 @font-face {
 	font-family: 'Saira';
@@ -28,6 +29,9 @@ button:hover {
 }
 ul{ /*unordered list*/
 	margin-left: 30px;
+}
+img{
+	user-select: none;
 }
 .titlebox {
 	display: flex;
@@ -98,6 +102,29 @@ ul{ /*unordered list*/
 .section_background_light{
 	background-color: var(--color-1-lightest);
 	color: black;
+}
+nav{
+	background-color: var(--color-5-darker);
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-buttons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.nav-buttons > button{
+	width: 150px;
+	text-wrap: nowrap;
+	text-transform: uppercase;
+	padding: 4px;
+	background-color: var(--color-1-lightest);
+	border-radius: 10px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 #becoming_a_game_producer_container{ /* GAME PRODUCER */
@@ -306,8 +333,7 @@ ul{ /*unordered list*/
 	border: none;
 }
 
-
-/* FOOTER */
+/** FOOTER */
 
 #footer {
 	background-color: var(--color-4-dark);
@@ -319,8 +345,6 @@ ul{ /*unordered list*/
 	align-items: center;
 	color: var(--color-1-lightest);
 }
-
-
 
 .AVPFooter {
 	height: 250px;
@@ -365,11 +389,9 @@ ul{ /*unordered list*/
 	display: inline-block;
 }
 
-
 .GPText img {
 	height: 135px;
 }
-
 
 .GPContact img {
 	height: 40px;
