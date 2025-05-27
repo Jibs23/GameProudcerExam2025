@@ -148,11 +148,8 @@ ul{ /*unordered list*/
 
 .AVPFooter {
 	height: 250px;
-	align-content: center;
-	
+	align-content: center;	
 }
-
-
 
 .AVPic {
 	display: inline-flex;
@@ -180,7 +177,6 @@ ul{ /*unordered list*/
 
 .GPFooter {
 	display: inline-flex;
-	align-content: center;
 }
 
 .GPLogo img {
@@ -193,17 +189,11 @@ ul{ /*unordered list*/
 	display: inline-block;
 }
 
-.GPText {
-	display: inline-block;
-	align-items: flex-end;
-}
 
 .GPText img {
 	height: 135px;
 }
 
-.GPContact {
-}
 
 .GPContact img {
 	height: 40px;
