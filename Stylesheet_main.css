@@ -130,21 +130,21 @@ ul{ /*unordered list*/
 	border: none;
 }
 
+
+/* FOOTER */
+
 #footer {
 	background-color: var(--color-4-dark);
 	height: 250px;
 	align-content: center;
 	width: 100vw;
 	display: inline-flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	color: var(--color-1-lightest);
 }
 
-#footer img {
-	display: inline-flex;
-	
-}
+
 
 .AVPFooter {
 	height: 250px;
@@ -152,15 +152,21 @@ ul{ /*unordered list*/
 	
 }
 
-.AVPFooter img {
-	height: 180px;
+
+
+.AVPic {
 	display: inline-flex;
-	margin-right: 15px;
-	border-radius: 15px;
 	
 }
 
+.AVPic img {
+	height: 180px;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+
 .AVPInfo {
+	
 	height: 180px;
 	display: inline-block;
 	
@@ -168,10 +174,38 @@ ul{ /*unordered list*/
 
 .AVPcontact img {
 	height: 40px;
-
+	padding-right: 5px;
 	
 }
 
+.GPFooter {
+	display: inline-flex;
+	align-content: center;
+}
+
+.GPLogo img {
+	height: 180px;
+	margin-right: 10px;
+}
+
 .GPFooter img {
-	height: 240px;
+	height: 180px;
+	display: inline-block;
+}
+
+.GPText {
+	display: inline-block;
+	align-items: flex-end;
+}
+
+.GPText img {
+	height: 135px;
+}
+
+.GPContact {
+}
+
+.GPContact img {
+	height: 40px;
+	padding-right: 5px;
 }
