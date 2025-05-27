@@ -306,3 +306,72 @@ ul{ /*unordered list*/
 	border: none;
 }
 
+
+/* FOOTER */
+
+#footer {
+	background-color: var(--color-4-dark);
+	height: 250px;
+	align-content: center;
+	width: 100vw;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+	color: var(--color-1-lightest);
+}
+
+
+
+.AVPFooter {
+	height: 250px;
+	align-content: center;	
+}
+
+.AVPic {
+	display: inline-flex;
+	
+}
+
+.AVPic img {
+	height: 180px;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+
+.AVPInfo {
+	
+	height: 180px;
+	display: inline-block;
+	
+}
+
+.AVPcontact img {
+	height: 40px;
+	padding-right: 5px;
+	
+}
+
+.GPFooter {
+	display: inline-flex;
+}
+
+.GPLogo img {
+	height: 180px;
+	margin-right: 10px;
+}
+
+.GPFooter img {
+	height: 180px;
+	display: inline-block;
+}
+
+
+.GPText img {
+	height: 135px;
+}
+
+
+.GPContact img {
+	height: 40px;
+	padding-right: 5px;
+}
