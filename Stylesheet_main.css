@@ -304,6 +304,32 @@ nav{
 	user-select: none;
 }
 
+.arrow{
+	height: 150px;
+	width: 200px;
+	margin-left: 7%;
+	position: absolute;
+}
+
+.divider {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin:20px auto;
+	margin-top:2.5%;
+	margin-bottom: 2.5%;
+}
+.dot{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color: var(--color-3-medium);
+}
+
+
+
+
 .price_content_1_box{
 	display: flex;
 	flex-direction: row;
@@ -343,6 +369,8 @@ nav{
 	z-index: 1;
 }
 
+
+
 .price_content_3_box{
 	display: flex;
 	flex-direction: row;
@@ -357,6 +385,7 @@ nav{
 	margin-bottom: 20px;
 	margin-left: 20%;
 	margin-right: 5%;
+	
 }
 .price_content_3_box > img {
 	height: 100px;
