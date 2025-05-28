@@ -305,9 +305,10 @@ nav{
 }
 
 .arrow{
-	height: 200px;
+	height: 150px;
 	width: 200px;
 	margin-left: 7%;
+	position: absolute;
 }
 
 .divider {
@@ -368,6 +369,8 @@ nav{
 	z-index: 1;
 }
 
+
+
 .price_content_3_box{
 	display: flex;
 	flex-direction: row;
@@ -382,6 +385,7 @@ nav{
 	margin-bottom: 20px;
 	margin-left: 20%;
 	margin-right: 5%;
+	
 }
 .price_content_3_box > img {
 	height: 100px;
