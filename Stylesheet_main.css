@@ -29,8 +29,32 @@ html {
 p{
 	font-size: large;
 }
+button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-wrap: nowrap;
+	text-transform: uppercase;
+	padding: 4px;
+	background-color: var(--color-1-lightest);
+	border-radius: 2px;
+	transition: all 0.25s ease-out;
+	border: none;
+	font-weight: 500;
+	color: var(--color-6-darkest);
+	user-select: none;
+}
 button:hover {
 	cursor: pointer;
+	background-color: white;
+	scale: 1.05;
+	box-shadow: 0 0 4px 0 var(--color-1-lightest); /*glow effect*/
+	text-shadow: 0 0 1px var(--color-2-light); /*glow effect*/
+	color: var(--color-4-dark);
+	border-color: var(--color-2-light);
+	transition: all 0.05s ease-in;
+	font-weight: 600;
 }
 ul{ /*unordered list*/
 	margin-left: 30px;
@@ -84,25 +108,10 @@ nav{
 }
 .nav-buttons > button{
 	width: 150px;
-	text-wrap: nowrap;
-	text-transform: uppercase;
-	padding: 4px;
-	background-color: var(--color-1-lightest);
-	border-radius: 10px;
-	transition: all 0.25s ease-out;
-	border: none;
-	font-weight: 500;
-	color: var(--color-6-darkest);
+
 }
 .nav-buttons > button:hover{
-	background-color: white;
-	scale: 1.05;
-	box-shadow: 0 0 4px 0 var(--color-1-lightest); /*glow effect*/
-	text-shadow: 0 0 1px var(--color-2-light); /*glow effect*/
-	color: var(--color-4-dark);
-	border-color: var(--color-2-light);
-	transition: all 0.05s ease-in;
-	font-weight: 600;
+
 }
 header {
 	overflow: visible;
@@ -181,6 +190,7 @@ header {
 	box-shadow: black 8px 7px 8px;
 	text-transform: uppercase;
 	font-weight: bold;
+	user-select: none;
 }
 #becoming_a_game_producer_container{ /* GAME PRODUCER */
 	padding-left: 0px;
@@ -230,7 +240,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	background-color: var(--color-4-dark);
-	border-radius: 32px;
+	border-radius: 2px;
 	padding: 20px;
 	color: white;
 	border: var(--color-2-light) 2px solid;
@@ -274,7 +284,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	background-color: var(--color-3-medium);
-	border-radius: 32px;
+	border-radius: 2px;
 	padding: 2px;
 	color: white;
 	border: var(--color-3-medium) 2px solid;
@@ -288,7 +298,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	background-color: var(--color-4-dark);
-	border-radius: 32px;
+	border-radius: 2px;
 	padding: 20px;
 	color: white;
 	border: var(--color-3-medium) 5px solid;
@@ -315,7 +325,7 @@ header {
 	flex-direction: row;
 	align-items: center;
 	background-color: var(--color-4-dark);
-	border-radius: 32px;
+	border-radius: 2px;
 	padding: 20px;
 	color: white;
 	border: var(--color-3-medium) 5px solid;
@@ -352,7 +362,7 @@ header {
 	flex-direction: column;
 	background-color: var(--color-5-darker);
 	color: white;
-	border-radius: 32px;
+	border-radius: 2px;
 	border: var(--color-1-lightest) 4px solid;
 	padding: 15px;
 	align-content: flex-end;
@@ -390,7 +400,7 @@ header {
   	user-select: none;
 }
 #enrollment_form > * {
-	border-radius: 15px;
+	border-radius: 2px;
 	border: var(--color-3-medium) 4px solid;
 	width: 100%;
 }
@@ -403,18 +413,15 @@ header {
 	height: 40px;
 	padding: 10px;
 }
-#button_1 { 
+#button_send { 
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 40px;
-	font-size: large;
-	font-weight: bold;
 	width: 90px;
 	background-color: var(--color-3-medium);
-	border-radius: 15px;
-	box-shadow: 
-		0 -5px 4px 0 var(--color-5-darker) inset, /* bottom inner shadow */
-		0 5px 4px 0 var(--color-2-light) inset;   /* top inner shadow */
 	color: white;
-	border: none;
+	font-size: large;
 }
 
 /** FOOTER */
@@ -442,7 +449,7 @@ header {
 
 .AVPic img {
 	height: 180px;
-	border-radius: 15px;
+	border-radius: 2px;
 	margin-right: 10px;
 }
 

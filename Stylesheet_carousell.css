@@ -28,6 +28,7 @@
   padding: 20px;
   aspect-ratio: 1/1;
   user-select: none;
+  border-radius: 2px;
 }
 .carousell-caption{
   width: 80%;
@@ -49,11 +50,10 @@
 .carousell-btn {
   position: absolute;
   display: flex;
-  top: 135px;
+  top: 155px;
   transform: translateY(-50%) scaleX(0.7) scaleY(1.4);
   background: rgba(0, 0, 0, 0);
   color: var(--color-5-darker);
-  text-shadow: #01203345 0px 5px 5px;
   border: none;
   font-size: 4em;
   height: 50px;
@@ -63,8 +63,8 @@
 
 }
 .carousell-btn:hover {
-  scale: 1.1;
-  transition: all 0.2s ease-in-out;
+  color: var(--color-4-dark);
+  background-color: transparent;
 }
 .carousell-btn:first-of-type { left: 10px; }
 .carousell-btn:last-of-type { right: 10px; }
