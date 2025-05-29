@@ -246,11 +246,11 @@ header {
 	margin-top:2.5%;
 	margin-bottom: 2.5%;
 }
-.dot{
-	width:20px;
-	height:20px;
-	border-radius:50%;
-	background-color: var(--color-3-medium);
+.dotted-divider{
+	width: 100%;
+	border: none;
+	border-top: var(--color-2-light) 20px dotted;
+	margin: 20px;
 }
 
 
