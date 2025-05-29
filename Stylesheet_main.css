@@ -41,7 +41,7 @@ img{
 .titlebox {
 	display: flex;
 	position: sticky;
-	top: 52;
+	top: 49;
 	z-index: 100;
 	align-items: center;
 	justify-content: center;
@@ -50,7 +50,7 @@ img{
 	padding: 10px;
 	width: 100%;
 	margin: 0 auto;
-	height: 90px;
+	height: 60px;
 	text-wrap: nowrap;
 }
 .titlebox h1 {
@@ -74,7 +74,7 @@ nav{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.nav-buttons{
+.nav-buttons{ /*TODO: fix issue with the refferenced id being attached to a sticky element in titlebox*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -89,7 +89,20 @@ nav{
 	padding: 4px;
 	background-color: var(--color-1-lightest);
 	border-radius: 10px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+	transition: all 0.25s ease-out;
+	border: none;
+	font-weight: 500;
+	color: var(--color-6-darkest);
+}
+.nav-buttons > button:hover{
+	background-color: white;
+	scale: 1.05;
+	box-shadow: 0 0 4px 0 var(--color-1-lightest); /*glow effect*/
+	text-shadow: 0 0 1px var(--color-2-light); /*glow effect*/
+	color: var(--color-4-dark);
+	border-color: var(--color-2-light);
+	transition: all 0.05s ease-in;
+	font-weight: 600;
 }
 header {
 	overflow: visible;
