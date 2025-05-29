@@ -7,8 +7,10 @@
     --color-6-darkest:  #012033;
 }
 /* Prevent horizontal scrollbars on the whole page */
-html, body {
+body {
   overflow-x: hidden;
+}
+html {
   scroll-behavior: smooth;
 }
 @font-face {
@@ -38,7 +40,9 @@ img{
 }
 .titlebox {
 	display: flex;
-	position: relative;
+	position: sticky; /* changed from relative */
+	top: 0;           /* stick to top */
+	z-index: 100;     /* ensure it stays above other elements */
 	align-items: center;
 	justify-content: center;
 	font-size: larger;
@@ -48,8 +52,6 @@ img{
 	margin: 0 auto;
 	height: 90px;
 	text-wrap: nowrap;
-	overflow: hidden;
-	
 }
 .titlebox h1 {
 	color: white;
@@ -460,3 +462,5 @@ nav{
 	height: 40px;
 	padding-right: 5px;
 }
+
+
