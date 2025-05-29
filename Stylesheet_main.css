@@ -22,7 +22,10 @@ html, body {
 	
 	/* For debugging purposes */
 	/* border: red 1px dashed;  */
-
+	
+}
+p{
+	font-size: large;
 }
 button:hover {
 	cursor: pointer;
