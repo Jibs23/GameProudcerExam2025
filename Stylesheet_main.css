@@ -98,20 +98,17 @@ nav{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.nav-buttons{ /*TODO: fix issue with the refferenced id being attached to a sticky element in titlebox*/
+.nav-buttons{ /*TODO: fix issue with navbar height messing up the linking go to page*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	gap: 10px;
+	width: 100%;
 }
 .nav-buttons > button{
 	width: 150px;
-
-}
-.nav-buttons > button:hover{
-
 }
 header {
 	overflow: visible;
