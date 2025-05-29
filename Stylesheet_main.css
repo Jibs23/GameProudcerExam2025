@@ -122,8 +122,10 @@ nav{
 }
 #intro_game_producer_logo{
 	position: absolute;
-	width: 600px;
-	left: 25%; /* TODO: think of better solution than this */
+	width: 700px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 #intro_background{
 	position: absolute;
@@ -156,80 +158,6 @@ nav{
 	text-transform: uppercase;
 	font-weight: bold;
 }
-#AndersVangPedersen_intro{
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	width: 330px;
-	aspect-ratio: 1/1;
-	border: var(--color-4-dark) 6px solid;
-	border-radius: 16px;
-	background-color: var(--color-4-dark);
-}
-#AndersVangPedersen_intro > img{
-	filter: grayscale(100%);
-	aspect-ratio: 1/1;
-	width: 100%;
-	border-radius: 10px;
-}
-#AndersVangPedersen_intro_bio{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	color: white;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	background: linear-gradient(
-		to top,
-		color-mix(in srgb, var(--color-5-darker) 90%, transparent) 0%,
-		color-mix(in srgb, var(--color-6-darkest) 50%, transparent) 100%
-	);
-}
-#AndersVangPedersen_intro_bio > p {
-	padding-left: 4px;
-}
-
-#AndersVangPedersen_intro_bio > p:nth-of-type(1) {
-	font-weight: bold;
-}
-
-#AndersVangPedersen_intro_bio > p:nth-of-type(2) {
-	font-size: smaller;
-	font-style: italic;
-}
-
-#AndersVangPedersen_intro_bio > p:nth-of-type(3) {
-	font-size: x-small;
-	padding-bottom: 4px;
-}
-#AndersVangPedersen_intro_contact{
-	position: inherit;
-	display: flex;
-	flex-direction: column;
-	background-color: var(--color-3-medium);
-	border: var(--color-4-dark) 6px solid;
-	border-radius: 17px;
-	bottom: 80px;
-	left: -40px;
-	width: 40px;
-	padding: 5px;
-	height: fit-content;
-	justify-content: center;
-	gap: 4px;
-}
-.contact-drawer-btn{
-	aspect-ratio: 1/1;
-	background-color: transparent;
-	width: inherit;
-	padding: 0px;
-	border: none;
-}
-
-.contact-drawer-btn img{
-	width: 100%;
-	height: 100%;
-}
-
 #becoming_a_game_producer_container{ /* GAME PRODUCER */
 	padding-left: 0px;
 	padding-right: 0px;
