@@ -40,9 +40,9 @@ img{
 }
 .titlebox {
 	display: flex;
-	position: sticky; /* changed from relative */
-	top: 0;           /* stick to top */
-	z-index: 100;     /* ensure it stays above other elements */
+	position: sticky;
+	top: 52;
+	z-index: 100;
 	align-items: center;
 	justify-content: center;
 	font-size: larger;
@@ -65,6 +65,34 @@ img{
 	user-select: none;
 	font-size: clamp(1.6rem, 5vw, 3rem);
 	z-index: 2;
+}
+nav{
+	position: sticky;
+	top: 0px;
+	z-index: 150;
+	background-color: var(--color-5-darker);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav-buttons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.nav-buttons > button{
+	width: 150px;
+	text-wrap: nowrap;
+	text-transform: uppercase;
+	padding: 4px;
+	background-color: var(--color-1-lightest);
+	border-radius: 10px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+header {
+	overflow: visible;
 }
 
 /** Responsive Design */
@@ -95,29 +123,7 @@ img{
 	background-color: var(--color-1-lightest);
 	color: black;
 }
-nav{
-	background-color: var(--color-5-darker);
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.nav-buttons{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-}
-.nav-buttons > button{
-	width: 150px;
-	text-wrap: nowrap;
-	text-transform: uppercase;
-	padding: 4px;
-	background-color: var(--color-1-lightest);
-	border-radius: 10px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
-}
+
 #intro_top{
 	position: relative;
 	padding-top:0px;
