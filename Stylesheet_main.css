@@ -88,7 +88,7 @@ img{
 	width: 100%;
 	pointer-events: none;
 	user-select: none;
-	font-size: clamp(1.6rem, 5vw, 3rem);
+	font-size: clamp(1.6rem, 5vw, 2.5rem);
 	z-index: 2;
 }
 nav{
@@ -446,6 +446,9 @@ header {
 }
 #Anders_intro_area > p{
 	width: 50%;
+}
+#program_button:hover{
+	color: var(--color-3-medium);
 }
 #reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
