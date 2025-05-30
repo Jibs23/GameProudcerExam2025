@@ -65,6 +65,7 @@
 .carousell-btn:hover {
   color: var(--color-4-dark);
   background-color: transparent;
+  box-shadow: none;
 }
 .carousell-btn:first-of-type { left: 10px; }
 .carousell-btn:last-of-type { right: 10px; }
