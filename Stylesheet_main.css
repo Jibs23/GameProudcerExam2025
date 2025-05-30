@@ -26,8 +26,8 @@ html {
 	/* border: red 1px dashed;  */
 	
 }
-p{
-	font-size: large;
+p, ul{
+	font-size: 18px;
 }
 button{
 	display: flex;
@@ -44,6 +44,7 @@ button{
 	font-weight: 500;
 	color: var(--color-6-darkest);
 	user-select: none;
+	font-size: 14px;
 }
 button:hover {
 	cursor: pointer;
