@@ -391,14 +391,13 @@ header {
 	width: 330px;
 	aspect-ratio: 1/1;
 	border: var(--color-5-darker) 6px solid;
-	border-radius: 16px;
+	border-radius: 2px;
 	background-color: var(--color-4-dark);
 }
 #AndersVangPedersen_intro > img{
-	filter: grayscale(100%);
 	aspect-ratio: 1/1;
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 2px;
 }
 #AndersVangPedersen_intro_bio{
 	position: absolute;
@@ -406,8 +405,6 @@ header {
 	width: 100%;
 	padding-top: 2px;
 	color: white;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
 	background: linear-gradient(
 		to top,
 		color-mix(in srgb, var(--color-5-darker) 90%, transparent) 0%,
@@ -450,6 +447,51 @@ header {
 #program_button:hover{
 	color: var(--color-3-medium);
 }
+#AdvisoryBoard{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 4px;
+	height: fit-content;
+	width: fit-content;
+}
+.advisory_board_member{
+	position: relative;
+	width: 300px;
+	aspect-ratio: 1/1;
+	z-index: 2; /*! WHY DO INDEX NEVER WORK? */
+}
+.advisory_board_member > img {
+	width: 100%;
+	aspect-ratio: 1/1;
+}
+.advisory_board_member_bio{
+	position: absolute;
+	bottom: 0px;
+	width: inherit;
+	height: 65px;
+	z-index: 2;
+	background: linear-gradient(
+		to top,
+		color-mix(in srgb, var(--color-5-darker) 90%, transparent) 0%,
+		color-mix(in srgb, var(--color-6-darkest) 50%, transparent) 100%
+	);
+}
+
+.advisory_board_member_bio > p {
+	padding-left: 4px;
+}
+
+.advisory_board_member_bio > p:nth-of-type(1) {
+	font-weight: bold;
+	font-size: small;
+}
+
+.advisory_board_member_bio > p:nth-of-type(2) {
+	font-size: smaller;
+	font-style: italic;
+}
+
 #reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
 }
