@@ -248,6 +248,16 @@ header {
 	width: 100px;
 	user-select: none;
 }
+#info_practical{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+#info_practical > div{
+	width: 500px;
+}
 
 .arrow{
 	height: 150px;
