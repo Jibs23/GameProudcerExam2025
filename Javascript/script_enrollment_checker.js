@@ -1,8 +1,5 @@
-/* TODO: fix the enrollment dates */
-const enrollmentClose = new Date('2025-08-02T00:00:00+02:00');  
-const enrollmentOpen = new Date(enrollmentClose);
-// Enrollment opens X months after it closes
-enrollmentOpen.setMonth(enrollmentOpen.getMonth() + 9);
+const enrollmentOpen = new Date('2025-05-01T00:00:00+02:00');
+const enrollmentClose = new Date('2025-08-01T23:59:59+02:00');
 
 function updateEnrollmentStatus() {
 	const today = new Date();

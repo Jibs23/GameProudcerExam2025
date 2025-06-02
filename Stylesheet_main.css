@@ -63,6 +63,14 @@ ul{ /*unordered list*/
 img{
 	user-select: none;
 }
+.inline_header{
+	align-items: center;
+	margin: 0 auto; 
+	justify-content: center;
+	text-transform: uppercase;
+	width: fit-content;
+	padding-top: 20px;
+}
 .titlebox {
 	display: flex;
 	position: sticky;
@@ -277,12 +285,6 @@ header {
 	margin-top:2.5%;
 	margin-bottom: 2.5%;
 }
-.dotted-divider{
-	width: 100%;
-	border: none;
-	border-top: var(--color-2-light) 20px dotted;
-	margin: 20px;
-}
 
 
 
@@ -450,15 +452,16 @@ header {
 }
 #AdvisoryBoard{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 4px;
 	height: fit-content;
 	width: fit-content;
+	margin: 0 auto;
 }
 .advisory_board_member{
 	position: relative;
-	width: 300px;
+	width: 250px;
 	aspect-ratio: 1/1;
 	z-index: 2; /*! WHY DO INDEX NEVER WORK? */
 }
@@ -596,20 +599,27 @@ header {
 }
 
 .AVPInfo {
-	
-	height: 180px;
 	display: inline-block;
-	
 }
 
+.AVPcontact{
+	display: flex;
+	gap: 4px;
+
+}
+.AVPcontact button{
+	background-color: transparent !important;
+	border-radius: 13px !important;
+}
 .AVPcontact img {
 	height: 40px;
-	padding-right: 5px;
-	
+	background: none;
+	border: none;
 }
 
 .GPFooter {
 	display: inline-flex;
+
 }
 
 .GPLogo img {
@@ -626,9 +636,17 @@ header {
 	height: 135px;
 }
 
+.GPContact {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+}
 .GPContact img {
 	height: 40px;
-	padding-right: 5px;
+}
+.GPContact button {
+	background-color: transparent !important;
+	border-radius: 13px !important;
 }
 
 
