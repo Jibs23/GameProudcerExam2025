@@ -492,6 +492,34 @@ header {
 	font-style: italic;
 }
 
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.trigger{
+	cursor: pointer;
+	color:white;
+	background-color: #0E334B;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.dropdown-text{
+	display: none;
+	position: absolute;
+	background-color: #5382A0;
+	min-width: 160px;
+	border-radius: 5px;
+	padding: 5px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-text{
+	display: block;
+}
+
+
 #reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
 }
