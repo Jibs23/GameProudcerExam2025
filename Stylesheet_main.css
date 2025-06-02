@@ -608,9 +608,8 @@ header {
 
 /** FOOTER */
 
-#footer {
+footer {
 	background-color: var(--color-4-dark);
-	height: 250px;
 	align-content: center;
 	width: 100vw;
 	display: inline-flex;
@@ -622,6 +621,7 @@ header {
 .AVPFooter {
 	height: 250px;
 	align-content: center;	
+	text-wrap: nowrap;
 }
 
 .AVPic {
