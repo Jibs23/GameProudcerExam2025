@@ -23,7 +23,7 @@
 			<button onclick="location.href='#the_program'">The Program</button>
 			<button onclick="location.href='#whos_behind_the_course'">advisory board</button>
 			<button onclick="location.href='#reviews_from_alumni'">Testimonies</button>
-			<button onclick="location.href='#practical_information_pricing'">Practical</button>
+			<button onclick="location.href='#practical_information_pricing'">Pricing</button>
 			<button onclick="location.href='#enrollment'">Contact</button>
 		</div>
 	</nav>
@@ -105,23 +105,23 @@
 						</ul>
 					</div>
 					
-					<img src="Images\program_photo.png" alt="Program Photo">
+					<img class="responsive_hide" src="Images\program_photo.png" alt="Program Photo">
 				</div>
 				
 				<div class="responsive_switch_to_columns" id="the_program_content_2">
-					<div class="program_content_2_box">
+					<div class="responsive_switch_to_columns program_content_2_box">
 						<img src="Images\icons\icon_clock.svg" alt="Clock Icon">
 						<p>30 sessions of 2 hours spread across 9 months</p>
 					</div>
-					<div class="program_content_2_box">
+					<div class="responsive_switch_to_columns program_content_2_box">
 						<img src="Images\icons\icon_globe.svg" alt="Globe Icon">
 						<p>All sessions are available to join online </p>
 					</div>
-					<div class="program_content_2_box">
+					<div class="responsive_switch_to_columns program_content_2_box">
 						<img src="Images\icons\icon_users.svg" alt="Users Icon">
 						<p>Each participant is offered up to 2 one-on-one coaching sessions per module (1 Hour) </p>
 					</div>
-					<div class="program_content_2_box">
+					<div class="program_content_2_box responsive_switch_to_columns">
 						<img src="Images\icons\icon_medal.svg" alt="Medal Icon">
 						<p>3 assesments (one for each module)</p>
 					</div>
@@ -159,8 +159,8 @@
 	<div class="section_background_dark"> <!-- WHO'S BEHIND THE PROGRAM -->
 		<div class="section_container" >
 		<div class="section_content" id="whos_behind_the_course_container">
-			<div id="Anders_intro_area">
-				<p> LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
+			<div style="display: flex; flex-direction: row; margin: 0 auto; justify-content: center;" id="Anders_intro_area" class="responsive_switch_to_columns">
+				<p style="width: 50%;"> LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM </p>
 				<div id="AndersVangPedersen_intro">
 					<img src="Images\portraits\AndersVangPedersen.jpg" alt="Anders Vang Pedersen, headshot">
 					<div id="AndersVangPedersen_intro_bio">
@@ -275,7 +275,7 @@
 				</div>
 				<div>
 					<h1 class="inline_header">GUEST SPEAKERS</h1>
-					<div class="carousell" style="height: 600px; width: 600px">
+					<div class="carousell">
 						<div class="carousell-slide" >
 							<img class="carousell-image" src="Images\portraits\Guest Speakers\Alexandar Skronski.jpg" alt="Guest Speaker: Alexandar Skronski">
 							<p class="carousell-alumni-name">Alexander Skronski</p>
@@ -373,7 +373,7 @@
 					</div>
 					
 				
-						<img src="Images\icons\icon_arrow.png" alt="Arrow Icon" class="arrow">
+						<img src="Images\icons\icon_arrow.png" alt="Arrow Icon" class="arrow responsive_hide">
 						<div class="price_content_3_box">
 							<ul>
 								<!-- <h1>Course Alumni price: € 750*</h1> -->
@@ -485,5 +485,4 @@ Where did you hear about us and what are your interests in the Game Producer Pro
 <!-- Scripts -->
 <script src="Javascript\script_carousell.js"></script>
 <script src="Javascript\script_enrollment_checker.js"></script>
-
 </html>

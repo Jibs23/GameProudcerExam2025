@@ -59,6 +59,7 @@ button:hover {
 }
 ul{ /*unordered list*/
 	margin-left: 30px;
+
 }
 img{
 	user-select: none;
@@ -81,7 +82,6 @@ img{
 	font-size: larger;
 	background-color: var(--color-3-medium);
 	padding: 10px;
-	width: 100%;
 	margin: 0 auto;
 	height: 60px;
 	text-wrap: nowrap;
@@ -133,11 +133,24 @@ header {
 		flex-direction: row !important;
 		grid-template-rows: 1fr 1fr !important;
 	}
+	.responsive_hide {
+		display: none !important;
+	}
+	#enrollment-status{
+		rotate: 0deg !important;
+		top: 0px !important;
+		left: 0px !important;
+		width: 100% !important;
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+		height: 50px !important;
+	}
 
 }
 /** WEBSITE SECTIONS **/
 .section_container {
 	margin: 0 auto;
+	width: clamp(60%, 1000px, 98%);
 }
 .section_content{
 	margin: 0 auto;
@@ -161,7 +174,7 @@ header {
 }
 #intro_game_producer_logo{
 	position: absolute;
-	width: 700px;
+	width: clamp(200px, 100vw, 700px);
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -214,12 +227,10 @@ header {
 }
 #who_is_it_for_text{
 	margin: 0 auto;
-	width: 80%;
 }
 #the_program_container{ /* THE PROGRAM */
 	display: flex;
 	flex-direction: column;
-	width: 80%;
 	gap: 20px;
 }
 #the_program_content_1{
@@ -262,11 +273,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-	width: 80%;
 	margin: 0 auto;
-}
-#info_practical > div{
-	width: 500px;
 }
 
 .arrow{
@@ -450,18 +457,20 @@ header {
 #program_button:hover{
 	color: var(--color-3-medium);
 }
-#AdvisoryBoard{
-	display: grid;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-columns: repeat(4, 1fr);
+
+#AdvisoryBoard {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	gap: 4px;
-	height: fit-content;
-	width: fit-content;
+	width: 100%;
 	margin: 0 auto;
 }
 .advisory_board_member{
 	position: relative;
-	width: 250px;
+	width: 200px;
+	max-width: 200px;
 	aspect-ratio: 1/1;
 	z-index: 2; /*! WHY DO INDEX NEVER WORK? */
 }
@@ -559,7 +568,7 @@ header {
 	color: white;
 }
 #enrollment_container { /* ENROLLMENT */
-	width: clamp(60%, 80%, 90%);
+	width: clamp(70%, 80vw, 98%);
 	margin-left: auto;
 	margin-right: auto;
 }

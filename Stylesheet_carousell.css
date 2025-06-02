@@ -68,7 +68,7 @@
   box-shadow: none;
 }
 .carousell-btn:first-of-type { left: 10px; }
-.carousell-btn:last-of-type { right: 10px; }
+.carousell-btn:last-of-type { right: -10px; }
 
 /** ANIMATION */
 .carousell-slide.active {
