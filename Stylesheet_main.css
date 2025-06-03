@@ -28,6 +28,7 @@ html {
 }
 h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
+	user-select: none;
 }
 p, ul{
 	font-size: 18px;
@@ -299,37 +300,31 @@ header {
 
 
 
-.price_content_1_box{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+.price_VAT{
 	background-color: var(--color-3-medium);
 	border-radius: 2px;
-	padding: 2px;
-	color: white;
-	border: var(--color-3-medium) 2px solid;
+	padding: 4px;
 	gap: 20px;
 	user-select: none;
-	margin-bottom: 10px;
 	font-size: smaller;
 	width: fit-content;
+	margin: 0 auto;
 }
 .price_content_box{
-	min-height: 450px;
+	min-height: 300px;
 	width: 500px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
-
+}
+.price_content_box > ul{
 }
 .price_content_box img {
-	position: absolute;
+	position: relative;
 	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
 	height: 100px;
 	width: 100px;
-	z-index: 1;
+	margin: 0 auto;
 }
 
 
