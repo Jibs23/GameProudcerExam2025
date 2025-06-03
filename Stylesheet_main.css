@@ -26,6 +26,9 @@ html {
 	/* border: red 1px dashed;  */
 	
 }
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+}
 p, ul{
 	font-size: 18px;
 }
@@ -308,33 +311,26 @@ header {
 	gap: 20px;
 	user-select: none;
 	margin-bottom: 10px;
+	font-size: smaller;
+	width: fit-content;
 }
-
-.price_content_2_box{
+.price_content_box{
+	min-height: 450px;
+	width: 500px;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	background-color: var(--color-4-dark);
-	border-radius: 2px;
-	padding: 20px;
-	color: white;
-	border: var(--color-3-medium) 5px solid;
-	gap: 20px;
-	user-select: none;
-	margin-bottom: 20px;
-	margin-left: 5%;
-	margin-right: 5%;
+	flex-direction: column;
+	position: relative;
+
 }
-.price_content_2_box > img {
+.price_content_box img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 100px;
 	width: 100px;
-	margin-left: auto;
-	margin-bottom: auto;
-	position: relative;
-	user-select: none;
 	z-index: 1;
 }
-
 
 
 .price_content_3_box{
@@ -588,12 +584,16 @@ header {
 	display: block;
 }
 
-
+.price_icon{
+	/*filter: brightness(0) saturate(100%) invert(69%) sepia(16%) saturate(1162%) hue-rotate(170deg) brightness(92%) contrast(92%); */
+}
 #reviews_from_alumni_container{ /* REVIEWS FROM ALUMNI*/
 
 }
 #practical_information_pricing_container{ /* PRACTICAL INFORMATION & PRICING */
 	color: white;
+	display: flex;
+	align-items: center;
 }
 #enrollment_container { /* ENROLLMENT */
 	width: clamp(70%, 80vw, 98%);
