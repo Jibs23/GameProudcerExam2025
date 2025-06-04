@@ -1,18 +1,15 @@
 function updateEnrollmentStatus() {
     const today = new Date();
     const year = today.getFullYear();
-
     // Enrollment period for this year
     const enrollmentOpen = new Date(`${year}-05-01T00:00:00+02:00`);
     const enrollmentClose = new Date(`${year}-08-01T23:59:59+02:00`);
-
-	// If today is before the enrollment period starts, we need to check next year's dates
+	// check if the element with ID 'enrollment-status' exists
     const statusElement = document.getElementById('enrollment-status');
     if (!statusElement) {
-        console.error("ERROR: could not verify if enrollment was open");
+        console.error("ERROR: no element with ID 'enrollment-status' found.");
         return;
     }
-
 	// Check if today is within the enrollment period
     if (today >= enrollmentOpen && today <= enrollmentClose) {
         statusElement.textContent = "ENROLLMENT OPEN NOW!";
@@ -30,6 +27,5 @@ function updateEnrollmentStatus() {
         statusElement.textContent = `Enrollment opens ${nextOpen.toLocaleDateString('en-GB', { timeZone: 'Europe/Copenhagen' })}`;
     }
 }
-
 // Run on page load
 window.addEventListener('DOMContentLoaded', updateEnrollmentStatus);
