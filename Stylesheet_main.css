@@ -228,6 +228,15 @@ header {
 	width: clamp(50%, 900px, 100%);
 }
 
+a {
+    color: var(--color-1-lightest);
+    text-decoration: underline;
+}
+
+.contact_cta_text{
+	font-size: small;
+}
+
 /* MANUAL OFFSETS FOR ALL THE INTERNAL SCROLL BUTTONS/LINKS */
 /* OFFSET ACCOUNTS FOR HEADER HEIGHT, SCROLL IS 50px TOO FAR BY DEFAULT */
 #who_is_it_for{
