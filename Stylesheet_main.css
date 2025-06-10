@@ -227,6 +227,28 @@ header {
 	border: 0px;
 	width: clamp(50%, 900px, 100%);
 }
+
+/* MANUAL OFFSETS FOR ALL THE INTERNAL SCROLL BUTTONS/LINKS */
+/* OFFSET ACCOUNTS FOR HEADER HEIGHT, SCROLL IS 50px TOO FAR BY DEFAULT */
+#who_is_it_for{
+	scroll-margin-top: 50px;
+}
+#the_program{
+	scroll-margin-top: 50px;
+}
+#whos_behind_the_course{
+	scroll-margin-top: 50px;
+}
+#reviews_from_alumni{
+	scroll-margin-top: 50px;
+}
+#practical_information_pricing{
+	scroll-margin-top: 50px;
+}
+#enrollment{
+	scroll-margin-top: 50px;
+}
+
 #who_is_it_for_container{ /* WHO IS IT FOR */
 }
 #who_is_it_for_text{
