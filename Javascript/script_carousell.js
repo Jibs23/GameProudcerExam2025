@@ -20,18 +20,18 @@ document.querySelectorAll('.carousell').forEach(carousell => {
   let isAnimating = false;
 
   function showSlide(index) {
-    slides.forEach((slide, i) => {
-      if (i === index) {
-        slide.classList.add('active');
-      } else {
-        slide.classList.remove('active'); // Ensure all others are not active
-      }
-    });
+	slides.forEach((slide, i) => {
+	  if (i === index) {
+		slide.classList.add('active');
+	  } else {
+		slide.classList.remove('active'); // Ensure all others are not active
+	  }
+	});
   }
 
   function setButtonsDisabled(disabled) {
-    if (prevBtn) prevBtn.disabled = disabled;
-    if (nextBtn) nextBtn.disabled = disabled;
+	if (prevBtn) prevBtn.disabled = disabled;
+	if (nextBtn) nextBtn.disabled = disabled;
   }
 
 function goToSlide(direction) {
@@ -85,8 +85,8 @@ function prevSlide() {
 
   // Attach event listeners to the buttons
   if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', prevSlide);
-    nextBtn.addEventListener('click', nextSlide);
+	prevBtn.addEventListener('click', prevSlide);
+	nextBtn.addEventListener('click', nextSlide);
   }
 
   // Initialize
