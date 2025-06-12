@@ -1,10 +1,10 @@
 :root {
-    --color-1-lightest: #E7EFF4;
-    --color-2-light:    #8AB2CA;
-    --color-3-medium:   #5382A0;
-    --color-4-dark:     #295875;
-    --color-5-darker:   #0E334B;
-    --color-6-darkest:  #012033;
+    --color-1-lightest: #F2EFDF;
+    --color-2-light:    #F2D091;
+    --color-3-medium:   #F29057;
+    --color-4-dark:     #F24738;
+    --color-5-darker:   #A63D33;
+    --color-6-darkest:  #70221b;
 }
 /* Prevent horizontal scrollbars on the whole page */
 body {
